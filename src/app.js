@@ -67,7 +67,7 @@ function cardHTML(s, i) {
   return `<article class="card" id="song-${s.n}" data-i="${i}">
     <button class="card-head" type="button" aria-expanded="false" aria-controls="body-${i}">
       <span class="num">${s.n}</span>
-      <span class="ht"><span class="slot">${esc(s.setLabel || (s.medley ? "Medley" : "Song"))}</span><div class="title">${esc(s.title)}</div>${credit ? `<div class="comp">${esc(credit)}</div>` : ""}</span>
+      <span class="ht"><span class="slot">${esc(s.slot || (s.medley ? "Medley" : "Song"))}</span><div class="title">${esc(s.title)}</div>${credit ? `<div class="comp">${esc(credit)}</div>` : ""}</span>
       <span class="key" aria-label="Key ${esc(s.key)}">${esc(s.key || "–")}</span><span class="chev" aria-hidden="true">▾</span>
     </button>
     <div class="card-body" id="body-${i}">

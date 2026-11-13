@@ -135,6 +135,7 @@ def client_payload(songs: dict) -> dict:
             "n": s.get("n"),
             "set": s.get("set"),
             "setLabel": s.get("setLabel"),
+            "slot": s.get("slot"),
             "title": s.get("title"),
             "key": s.get("key"),
             "artist": s.get("artist"),

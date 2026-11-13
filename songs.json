@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-2",
+  "version": "2026-11-13-3",
   "event": {
     "title": "One Body Worship Night",
     "ministry": "Flourish Your Faith Ministries",
@@ -207,8 +207,9 @@
         "title": "Steffany Gretzinger - Show Me Your Face (Official Lyric Video)",
         "channel": "Steffany Gretzinger"
       },
-      "matchNotes": "Justin confirmed the Steffany Gretzinger recording (official lyric video on her channel, oembed verified). The song was written by Don Potter; do not use the Paul Wilbur recording. Chord chart in A expected at 06-show-me-your-face-A-chord.pdf when it lands. Leave as chart needed until then.",
-      "songselectTitle": "Show Me Your Face"
+      "matchNotes": "Justin confirmed the Steffany Gretzinger recording (official lyric video on her channel, oembed verified). Writer Don Potter, CCLI 2328720. SongSelect has no chord chart; leave as chart needed.",
+      "songselectTitle": "Show Me Your Face",
+      "ccli": "2328720"
     },
     {
       "n": 7,
@@ -283,18 +284,24 @@
           "matchNotes": "Official Gateway Worship channel (Chapel Sessions). The original vocalist on the Gateway recording was Kari Jobe."
         },
         {
-          "title": "Faithfulness",
+          "title": "Great Is Thy Faithfulness",
           "key": "E",
-          "artist": "Justin Yglesias / Flourish (needs confirm)",
-          "songwriter": "Justin Yglesias (quotes the hymn Great Is Thy Faithfulness by Thomas Chisholm / William Runyan, 1923)",
-          "original": true,
+          "artist": "Traditional hymn (well-known official recording: Carrie Underwood ft. CeCe Winans)",
+          "songwriter": "Thomas O. Chisholm, William M. Runyan",
           "chart": {
-            "file": "09b-faithfulness-E-chord.pdf",
+            "file": "09b-great-is-thy-faithfulness-E-chord.pdf",
             "kind": "chord",
             "label": "Chord chart"
           },
-          "youtube": null,
-          "matchNotes": "On Justin's Flourish album, Faithfulness is an original that quotes the hymn Great Is Thy Faithfulness. Not confirmed by Justin for this set the way Open My Heart's Eyes and The Potter were. Album chord chart exists in D (wrong key for this set) and was not copied. No official recording; YouTube left blank. Confirm with Justin whether this is the Flourish original or another song titled Faithfulness."
+          "youtube": {
+            "id": "NT0HcAr9aeI",
+            "url": "https://www.youtube.com/watch?v=NT0HcAr9aeI",
+            "title": "Carrie Underwood - Great Is Thy Faithfulness ft. CeCe Winans (Official Performance Video)",
+            "channel": "carrieunderwoodVEVO"
+          },
+          "matchNotes": "Confirmed as the hymn Great Is Thy Faithfulness (Chisholm/Runyan, CCLI 18723), not a Flourish original. Official Carrie Underwood VEVO performance featuring CeCe Winans, oembed verified.",
+          "ccli": "18723",
+          "songselectTitle": "Great Is Thy Faithfulness"
         }
       ]
     },
@@ -303,8 +310,8 @@
       "set": "second",
       "title": "Rest On Us",
       "key": "E",
-      "artist": "Maverick City Music / UPPERROOM",
-      "songwriter": "Maverick City Music / UPPERROOM",
+      "artist": "UPPERROOM / Maverick City Music",
+      "songwriter": "UPPERROOM",
       "chart": {
         "file": "10-rest-on-us-E-chord.pdf",
         "kind": "chord",
@@ -316,7 +323,8 @@
         "title": "Rest On Us (Live) - UPPERROOM",
         "channel": "UPPERROOM"
       },
-      "matchNotes": "Official UPPERROOM channel upload of Rest On Us (Live), oembed verified. Preferred over the TRIBL collaboration video. A Maverick City official-titled video (feat. Sam Rivera) is also on the TRIBL channel, so UPPERROOM's own channel is the best official artist upload found."
+      "matchNotes": "Official UPPERROOM channel upload of Rest On Us (Live), oembed verified. Preferred over the TRIBL collaboration video. A Maverick City official-titled video (feat. Sam Rivera) is also on the TRIBL channel, so UPPERROOM's own channel is the best official artist upload found.",
+      "ccli": "7126736"
     },
     {
       "n": 11,
@@ -324,7 +332,7 @@
       "title": "Son Of Heaven",
       "key": "A",
       "artist": "Brandon Lake",
-      "songwriter": "Brandon Lake",
+      "songwriter": "Brandon Lake, Dante Bowe, Matt Maher",
       "chart": {
         "file": "11-son-of-heaven-A-chord.pdf",
         "kind": "chord",
@@ -336,7 +344,8 @@
         "title": "Son Of Heaven - Brandon Lake  | House of Miracles",
         "channel": "Bethel Music"
       },
-      "matchNotes": "Official Bethel Music channel (House of Miracles), oembed verified. UCatholic has this song in F; this set needs A \u2014 new charts, do not reuse the F files."
+      "matchNotes": "Official Bethel Music channel (House of Miracles), oembed verified. UCatholic has this song in F; this set needs A \u2014 new charts, do not reuse the F files.",
+      "ccli": "7158420"
     },
     {
       "n": 12,
@@ -356,28 +365,120 @@
         "title": "Set a Fire - Will Reagan & United Pursuit",
         "channel": "United Pursuit"
       },
-      "matchNotes": "Official United Pursuit channel, oembed verified."
+      "matchNotes": "Official United Pursuit channel, oembed verified.",
+      "ccli": "5911299"
     },
     {
       "n": 13,
       "set": "close",
       "setLabel": "Close",
-      "title": "Doxology",
+      "title": "Doxology (Amen)",
       "key": "A",
-      "artist": "Traditional / The Worship Initiative feat. Shane & Shane",
-      "songwriter": "Thomas Ken (text, 1709); tune OLD 100TH, Louis Bourgeois / Genevan Psalter (public domain)",
+      "artist": "Phil Wickham",
+      "songwriter": "Phil Wickham",
       "chart": {
         "file": "13-doxology-A-chord.pdf",
         "kind": "chord",
         "label": "Chord chart"
       },
       "youtube": {
-        "id": "9PtLcni6Uq4",
-        "url": "https://www.youtube.com/watch?v=9PtLcni6Uq4",
-        "title": "Doxology | The Worship Initiative feat. Shane and Shane | LIVE from The Gospel Coalition",
-        "channel": "The Gospel Coalition"
+        "id": "J228TzlS9Co",
+        "url": "https://www.youtube.com/watch?v=J228TzlS9Co",
+        "title": "Phil Wickham - Doxology//Amen (Official Lyric Video)",
+        "channel": "PhilWickhamVEVO"
       },
-      "matchNotes": "Traditional Doxology. Official live performance video on The Gospel Coalition channel, featuring The Worship Initiative / Shane & Shane (oembed verified). This arrangement includes an Amen section; confirm with Justin if he wants a plain Old 100th or a specific arrangement in A."
+      "matchNotes": "Confirmed as Doxology (Amen) by Phil Wickham, CCLI 7059306. Official lyric video on PhilWickhamVEVO, oembed verified.",
+      "ccli": "7059306",
+      "songselectTitle": "Doxology (Amen)"
+    },
+    {
+      "n": "X1",
+      "set": "extras",
+      "setLabel": "Extras",
+      "slot": "Extra",
+      "title": "Holy Forever",
+      "key": "D",
+      "artist": "Chris Tomlin",
+      "songwriter": "Chris Tomlin",
+      "ccli": "7201044",
+      "chart": {
+        "file": "x1-holy-forever-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "IkHgxKemCRk",
+        "url": "https://www.youtube.com/watch?v=IkHgxKemCRk",
+        "title": "Chris Tomlin - Holy Forever (Lyric Video)",
+        "channel": "ChrisTomlinVEVO"
+      },
+      "matchNotes": "Official ChrisTomlinVEVO lyric video, oembed verified."
+    },
+    {
+      "n": "X2",
+      "set": "extras",
+      "slot": "Extra",
+      "title": "Living Hope",
+      "key": "D",
+      "artist": "Phil Wickham",
+      "songwriter": "Phil Wickham",
+      "ccli": "7106807",
+      "chart": {
+        "file": "x2-living-hope-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "u-1fwZtKJSM",
+        "url": "https://www.youtube.com/watch?v=u-1fwZtKJSM",
+        "title": "Phil Wickham - Living Hope (Official Music Video)",
+        "channel": "PhilWickhamVEVO"
+      },
+      "matchNotes": "Official PhilWickhamVEVO music video, oembed verified."
+    },
+    {
+      "n": "X3",
+      "set": "extras",
+      "slot": "Extra",
+      "title": "Shout to the Lord",
+      "key": "D",
+      "artist": "Hillsong Worship / Darlene Zschech",
+      "songwriter": "Darlene Zschech",
+      "ccli": "1406918",
+      "chart": {
+        "file": "x3-shout-to-the-lord-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "5_aIauL2xKA",
+        "url": "https://www.youtube.com/watch?v=5_aIauL2xKA",
+        "title": "Shout To The Lord - Hillsong Worship",
+        "channel": "Hillsong Worship"
+      },
+      "matchNotes": "Official Hillsong Worship channel, oembed verified."
+    },
+    {
+      "n": "X4",
+      "set": "extras",
+      "slot": "Extra",
+      "title": "Pour My Love On You",
+      "key": "D",
+      "artist": "Phillips, Craig & Dean",
+      "songwriter": "Phillips, Craig & Dean",
+      "ccli": "3262957",
+      "chart": {
+        "file": "x4-pour-my-love-on-you-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "ORPsO4eQCZM",
+        "url": "https://www.youtube.com/watch?v=ORPsO4eQCZM",
+        "title": "Pour My Love On You",
+        "channel": "Phillips, Craig & Dean - Topic"
+      },
+      "matchNotes": "No official music video found; this is the official artist Topic-channel audio, oembed verified."
     }
   ]
 }
