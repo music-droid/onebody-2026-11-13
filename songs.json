@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-3",
+  "version": "2026-11-13-4",
   "event": {
     "title": "One Body Worship Night",
     "ministry": "Flourish Your Faith Ministries",
@@ -127,7 +127,11 @@
         "label": "Lyrics (chord chart coming)"
       },
       "youtube": null,
-      "matchNotes": "Justin's original. Not the Paul Baloche song Open the Eyes of My Heart. Lyric PDF copied as-is from AL album files (Flourish lyrics shared PDF). Album lead sheet exists in Db (and Eb when paired with Be Thou My Vision) \u2014 not used, wrong key and lead-sheet format. No official recording; YouTube left blank. Do not use demo/scratch audio or the album site."
+      "matchNotes": "Justin's original. Not the Paul Baloche song Open the Eyes of My Heart. Lyric PDF copied as-is from AL album files (Flourish lyrics shared PDF). Album lead sheet exists in Db (and Eb when paired with Be Thou My Vision) \u2014 not used, wrong key and lead-sheet format. No official recording; YouTube left blank. Do not use demo/scratch audio or the album site.",
+      "audio": {
+        "file": "04-open-my-hearts-eyes-rough-mix.m4a",
+        "label": "Rough mix (Nov 8), not final. Recorded in the album key: Db. Tonight we play it in A."
+      }
     },
     {
       "n": 5,
@@ -255,7 +259,11 @@
         "label": "Lyrics (chord chart coming)"
       },
       "youtube": null,
-      "matchNotes": "Justin's original (Flourish Day 8), not Hillsong The Potter's Hand and not CCV Music The Potter. Lyric PDF copied as-is from AL album files. Album lead sheet exists in G \u2014 not used (wrong key, lead sheet). No official recording; YouTube left blank. Do not use demo/scratch audio or the album site."
+      "matchNotes": "Justin's original (Flourish Day 8), not Hillsong The Potter's Hand and not CCV Music The Potter. Lyric PDF copied as-is from AL album files. Album lead sheet exists in G \u2014 not used (wrong key, lead sheet). No official recording; YouTube left blank. Do not use demo/scratch audio or the album site.",
+      "audio": {
+        "file": "08-the-potter-rough-mix.m4a",
+        "label": "Rough mix (Nov 8), not final. Recorded in the album key: G. Tonight we play it in E."
+      }
     },
     {
       "n": 9,

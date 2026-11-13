@@ -1,6 +1,11 @@
 # Raw charts and lyrics — never commit plaintext PDFs
 charts/*.pdf
 charts/*.PDF
+charts/*.m4a
+charts/*.M4A
+charts/*.mp3
+charts/*.mp4
+charts/*.wav
 !charts/.gitkeep
 
 # Local leftovers (wrong-song SongSelect downloads, etc.)

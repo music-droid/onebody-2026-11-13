@@ -44,8 +44,26 @@ function chartButtons(s) {
   }).join("");
 }
 
+function audioMime(path) {
+  const p = String(path).replace(/\.enc$/i, "").toLowerCase();
+  if (p.endsWith(".mp3")) return "audio/mpeg";
+  if (p.endsWith(".m4a") || p.endsWith(".aac")) return "audio/mp4";
+  if (p.endsWith(".wav")) return "audio/wav";
+  if (p.endsWith(".ogg") || p.endsWith(".oga")) return "audio/ogg";
+  return "application/octet-stream";
+}
+
+function audioHTML(s) {
+  const au = s.audio;
+  if (!au || !au.present || !au.file) return "";
+  const label = au.label || "Rough mix";
+  return `<div class="audio-wrap" data-audio="${esc(au.file)}"><p class="note">${esc(label)}</p><p class="nort">Loading recording…</p></div>`;
+}
+
 function recHTML(s) {
-  if (s.youtube) return `<div class="rec" data-yt="${esc(s.youtube)}"></div>`;
+  const audio = audioHTML(s);
+  if (s.youtube) return `${audio}<div class="rec" data-yt="${esc(s.youtube)}"></div>`;
+  if (audio) return audio;
   return `<p class="nort">No recording added yet.</p>`;
 }
 
@@ -85,6 +103,30 @@ function mountYouTube(el) {
     const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?playsinline=1&rel=0&modestbranding=1&fs=1`;
     rec.innerHTML = `<div class="yt"><iframe src="${src}" title="Recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
   });
+}
+
+async function mountAudio(card) {
+  const wraps = card.querySelectorAll(".audio-wrap[data-audio]");
+  for (const wrap of wraps) {
+    if (wrap.dataset.ready) continue;
+    wrap.dataset.ready = "1";
+    try {
+      const data = await decryptEnc(encUrl(wrap.dataset.audio));
+      const url = URL.createObjectURL(new Blob([data], { type: audioMime(wrap.dataset.audio) }));
+      const loading = wrap.querySelector(".nort");
+      if (loading) loading.remove();
+      const el = document.createElement("audio");
+      el.controls = true;
+      el.setAttribute("playsinline", "");
+      el.preload = "metadata";
+      el.src = url;
+      wrap.appendChild(el);
+    } catch (err) {
+      const loading = wrap.querySelector(".nort");
+      if (loading) loading.textContent = "Couldn't load this recording.";
+      console.error(err);
+    }
+  }
 }
 
 function renderHeader() {
@@ -130,7 +172,7 @@ function renderSongs() {
     if (head) {
       const card = head.parentElement, open = !card.classList.contains("open");
       card.classList.toggle("open", open); head.setAttribute("aria-expanded", open);
-      if (open) mountYouTube(card);
+      if (open) { mountYouTube(card); mountAudio(card); }
       return;
     }
     const f = ev.target.closest("[data-pdf]");

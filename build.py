@@ -102,11 +102,35 @@ def is_pdf(path: Path) -> bool:
         return False
 
 
+def is_m4a(path: Path) -> bool:
+    if not path.is_file():
+        return False
+    try:
+        data = path.read_bytes()[:32]
+    except OSError:
+        return False
+    return len(data) >= 12 and data[4:8] == b"ftyp"
+
+
+def iter_audio_entries(songs: dict):
+    for s in songs["songs"]:
+        if s.get("audio"):
+            yield s["audio"]
+        for sub in s.get("songs") or []:
+            if sub.get("audio"):
+                yield sub["audio"]
+
+
 def mark_present(songs: dict) -> None:
-    """Flag which referenced files exist as real PDFs, without inventing charts."""
+    """Flag which referenced files exist as real PDFs or m4a, without inventing charts."""
     for ch in iter_chart_entries(songs):
         fn = ch.get("file")
         ch["present"] = bool(fn and is_pdf(CHARTS / fn))
+    for au in iter_audio_entries(songs):
+        if isinstance(au, str):
+            continue
+        fn = au.get("file")
+        au["present"] = bool(fn and is_m4a(CHARTS / fn))
 
 
 def client_payload(songs: dict) -> dict:
@@ -145,6 +169,16 @@ def client_payload(songs: dict) -> dict:
             "original": bool(s.get("original")),
             "youtube": clean_yt(s.get("youtube")),
         }
+        if s.get("audio"):
+            au = s["audio"]
+            if isinstance(au, str):
+                out["audio"] = {"file": au, "present": True}
+            elif au.get("file") and au.get("present"):
+                out["audio"] = {
+                    "file": au.get("file"),
+                    "label": au.get("label"),
+                    "present": True,
+                }
         if s.get("chart"):
             out["chart"] = clean_chart(s["chart"])
         if s.get("charts"):
@@ -298,8 +332,8 @@ def publish(staging: Path, dest: Path) -> None:
             shutil.copy2(p, target)
 
 
-def encrypt_charts(key: bytes, songs: dict, dest_files: Path) -> int:
-    n = 0
+def encrypt_charts(key: bytes, songs: dict, dest_files: Path) -> tuple[int, int]:
+    n_pdf = n_audio = 0
     seen: set[str] = set()
     for ch in iter_chart_entries(songs):
         fn = ch.get("file")
@@ -315,8 +349,24 @@ def encrypt_charts(key: bytes, songs: dict, dest_files: Path) -> int:
             ch["present"] = False
             continue
         (dest_files / (fn + ".enc")).write_bytes(encrypt(key, data))
-        n += 1
-    return n
+        n_pdf += 1
+    for au in iter_audio_entries(songs):
+        fn = au.get("file") if isinstance(au, dict) else au
+        if not fn or fn in seen:
+            continue
+        seen.add(fn)
+        src = CHARTS / fn
+        if not src.is_file():
+            continue
+        data = src.read_bytes()
+        if not is_m4a(src):
+            print(f"  warning: {fn} is not a valid m4a (skipped)", file=sys.stderr)
+            if isinstance(au, dict):
+                au["present"] = False
+            continue
+        (dest_files / (fn + ".enc")).write_bytes(encrypt(key, data))
+        n_audio += 1
+    return n_pdf, n_audio
 
 
 def main() -> None:
@@ -335,7 +385,7 @@ def main() -> None:
         die("icons are missing")
 
     staging = Path(tempfile.mkdtemp(prefix="onebody-build-"))
-    n_pdf = 0
+    n_pdf = n_audio = 0
     try:
         (staging / "files").mkdir()
         (staging / "icons").mkdir()
@@ -343,7 +393,7 @@ def main() -> None:
         inner = build_inner_html(build_songs_js(songs))
         (staging / "app.enc").write_bytes(encrypt(key, inner))
 
-        n_pdf = encrypt_charts(key, songs, staging / "files")
+        n_pdf, n_audio = encrypt_charts(key, songs, staging / "files")
 
         salt_b64 = b64encode(salt).decode("ascii")
         (staging / "index.html").write_text(gate_html(salt_b64), encoding="utf-8")
@@ -368,6 +418,7 @@ def main() -> None:
     print(f"  version: {version}")
     print(f"  app.enc bytes: {(OUT / 'app.enc').stat().st_size}")
     print(f"  encrypted chart/lyric PDFs: {n_pdf}")
+    print(f"  encrypted audio: {n_audio}")
     if missing:
         print(f"  chart needed ({len(missing)}):")
         for fn in missing:
