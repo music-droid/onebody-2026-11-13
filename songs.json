@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-1",
+  "version": "2026-11-13-2",
   "event": {
     "title": "One Body Worship Night",
     "ministry": "Flourish Your Faith Ministries",
@@ -194,7 +194,7 @@
       "set": "first",
       "title": "Show Me Your Face",
       "key": "A",
-      "artist": "Paul Wilbur",
+      "artist": "Steffany Gretzinger",
       "songwriter": "Don Potter",
       "chart": {
         "file": "06-show-me-your-face-A-chord.pdf",
@@ -202,12 +202,13 @@
         "label": "Chord chart"
       },
       "youtube": {
-        "id": "LWY0HcvoFVI",
-        "url": "https://www.youtube.com/watch?v=LWY0HcvoFVI",
-        "title": "Show Me Your Face (Live)",
-        "channel": "Paul Wilbur - Topic"
+        "id": "aCq3HNBmB8k",
+        "url": "https://www.youtube.com/watch?v=aCq3HNBmB8k",
+        "title": "Steffany Gretzinger - Show Me Your Face (Official Lyric Video)",
+        "channel": "Steffany Gretzinger"
       },
-      "matchNotes": "Matched to the widely used Don Potter song recorded by Paul Wilbur (not the different Klaus Kuehn song of the same title). Official artist Topic channel live audio (oembed verified). No official music-video upload found on Paul Wilbur Ministries."
+      "matchNotes": "Justin confirmed the Steffany Gretzinger recording (official lyric video on her channel, oembed verified). The song was written by Don Potter; do not use the Paul Wilbur recording. Chord chart in A expected at 06-show-me-your-face-A-chord.pdf when it lands. Leave as chart needed until then.",
+      "songselectTitle": "Show Me Your Face"
     },
     {
       "n": 7,
