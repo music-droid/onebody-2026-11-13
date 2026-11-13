@@ -89,13 +89,16 @@ function mountYouTube(el) {
 
 function renderHeader() {
   const e = SET.event;
-  $("#event-sub").textContent = `${e.ministry || "Flourish"} · led by ${e.leader || "Justin Yglesias"}`;
+  $("#event-sub").textContent = e.ministry || "Flourish Your Faith Ministries";
   $("#event-date").textContent = e.dateLabel || "";
   document.title = `One Body · ${e.dateLabel || "Worship Night"}`;
   const parts = [];
-  parts.push(`<b>Details still being confirmed</b>`);
-  parts.push(`<div>Venue: ${e.venue ? esc(e.venue) : "To be confirmed"}</div>`);
-  parts.push(`<div>Schedule: ${e.schedule ? esc(e.schedule) : "To be confirmed"}</div>`);
+  parts.push(`<b>${esc(e.title || "One Body Worship Night")}</b>`);
+  if (e.venue) parts.push(`<div>${esc(e.venue)}</div>`);
+  else parts.push(`<div>Venue: To be confirmed</div>`);
+  if (e.schedule) parts.push(`<div>${esc(e.schedule)}</div>`);
+  else parts.push(`<div>Schedule: To be confirmed</div>`);
+  if (e.eventPage) parts.push(`<div><a class="elink" href="${esc(e.eventPage)}" target="_blank" rel="noopener">Event page</a></div>`);
   if (e.rosterNote) parts.push(`<div>${esc(e.rosterNote)}</div>`);
   if (Array.isArray(e.roster) && e.roster.length) {
     const items = e.roster.map(r => {

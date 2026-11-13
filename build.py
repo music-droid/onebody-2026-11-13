@@ -2,7 +2,7 @@
 """Build the encrypted One Body GitHub Pages site.
 
 Reads the team password from ONEBODY_SITE_PASSWORD, or from
-/home/box/agent-data/flo/onebody-2026-11-26-password.txt.
+/home/box/agent-data/flo/onebody-2026-11-13-password.txt.
 Never prints the password. Writes only public/encrypted files to site/ and docs/.
 Raw PDFs in charts/ are not copied in the clear.
 """
@@ -31,7 +31,7 @@ ICONS_SRC = ROOT / "icons"
 OUT = ROOT / "site"
 DOCS = ROOT / "docs"
 SALT_PATH = ROOT / "salt.bin"
-PASSWORD_FILE = Path("/home/box/agent-data/flo/onebody-2026-11-26-password.txt")
+PASSWORD_FILE = Path("/home/box/agent-data/flo/onebody-2026-11-13-password.txt")
 KEYNAME = "ob-k"
 
 

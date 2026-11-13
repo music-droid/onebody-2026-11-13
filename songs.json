@@ -1,24 +1,49 @@
 {
-  "version": "2026-11-26-1",
+  "version": "2026-11-13-1",
   "event": {
     "title": "One Body Worship Night",
-    "ministry": "Flourish",
+    "ministry": "Flourish Your Faith Ministries",
     "leader": "Justin Yglesias",
-    "date": "2026-11-26",
-    "dateLabel": "Thursday, November 26, 2026",
-    "venue": null,
-    "schedule": null,
-    "rosterNote": "Roster and timing are still being confirmed.",
+    "date": "2026-11-13",
+    "dateLabel": "Friday, November 13, 2026",
+    "venue": "Maple and Cream restaurant, 375 N University Drive, Plantation, FL 33324",
+    "schedule": "Sound check 6:00 PM, worship 7:00 PM ET, about 1.5 hours, simple setup",
+    "eventPage": "https://flourishyourfaith.org/events/worship-nights/one-body-worship-night-november-2026",
     "roster": [
       {
         "name": "Justin Yglesias",
-        "role": "Worship leader",
+        "role": "Worship leader, keys/vocals",
+        "status": "confirmed"
+      },
+      {
+        "name": "Rebecca",
+        "role": "Vocals",
         "status": "confirmed"
       },
       {
         "name": "Alexa Yglesias",
         "role": "Vocals",
         "status": "possibly"
+      },
+      {
+        "name": "Ricardo Gonzalez",
+        "role": "Cajon",
+        "status": "confirmed"
+      },
+      {
+        "name": "Jorge Garzon",
+        "role": "Bass",
+        "status": "confirmed"
+      },
+      {
+        "name": "Giacomo Bacigalupo",
+        "role": "Electric guitar",
+        "status": "confirmed"
+      },
+      {
+        "name": "Sofia Ventura",
+        "role": "Violin",
+        "status": "confirmed"
       }
     ]
   },
@@ -285,12 +310,12 @@
         "label": "Chord chart"
       },
       "youtube": {
-        "id": "R8MZbl-GRdY",
-        "url": "https://www.youtube.com/watch?v=R8MZbl-GRdY",
-        "title": "Rest On Us (feat. Brandon Lake & Eniola Abioye) | Maverick City Music | UPPERROOM | TRIBL",
-        "channel": "TRIBL"
+        "id": "ZathS9FlvwU",
+        "url": "https://www.youtube.com/watch?v=ZathS9FlvwU",
+        "title": "Rest On Us (Live) - UPPERROOM",
+        "channel": "UPPERROOM"
       },
-      "matchNotes": "Official TRIBL (Maverick City / UPPERROOM family) collaboration video, oembed verified."
+      "matchNotes": "Official UPPERROOM channel upload of Rest On Us (Live), oembed verified. Preferred over the TRIBL collaboration video. A Maverick City official-titled video (feat. Sam Rivera) is also on the TRIBL channel, so UPPERROOM's own channel is the best official artist upload found."
     },
     {
       "n": 11,
