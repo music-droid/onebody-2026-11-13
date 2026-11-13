@@ -1,0 +1,19 @@
+# Raw charts and lyrics — never commit plaintext PDFs
+charts/*.pdf
+charts/*.PDF
+!charts/.gitkeep
+
+# Local leftovers (wrong-song SongSelect downloads, etc.)
+_discarded-wrong-song/
+
+# Build material that must stay off the repo
+salt.bin
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local build tree; GitHub Pages is published from docs/
+site/
+
+# Never commit the team password (it does not live in this directory)
+*password*.txt

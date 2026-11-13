@@ -1,0 +1,357 @@
+{
+  "version": "2026-11-26-1",
+  "event": {
+    "title": "One Body Worship Night",
+    "ministry": "Flourish",
+    "leader": "Justin Yglesias",
+    "date": "2026-11-26",
+    "dateLabel": "Thursday, November 26, 2026",
+    "venue": null,
+    "schedule": null,
+    "rosterNote": "Roster and timing are still being confirmed.",
+    "roster": [
+      {
+        "name": "Justin Yglesias",
+        "role": "Worship leader",
+        "status": "confirmed"
+      },
+      {
+        "name": "Alexa Yglesias",
+        "role": "Vocals",
+        "status": "possibly"
+      }
+    ]
+  },
+  "songs": [
+    {
+      "n": 1,
+      "set": "first",
+      "setLabel": "First set",
+      "title": "All Creation Worships You",
+      "key": "D",
+      "artist": "Tony Melendez & Jim Cowan (Integrity's Hosanna! Music)",
+      "songwriter": "Kirk Dearman, Jim Mills",
+      "ccli": "190469",
+      "chart": {
+        "file": "01-all-creation-worships-you-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "ARpFiHJR1Z0",
+        "url": "https://www.youtube.com/watch?v=ARpFiHJR1Z0",
+        "title": "All Creation Worships You",
+        "channel": "Tony Melendez - Topic"
+      },
+      "matchNotes": "CCLI 190469 confirmed. No official music-video upload found; this is the original recording on the artist's official YouTube Topic channel (oembed verified)."
+    },
+    {
+      "n": 2,
+      "set": "first",
+      "title": "Amen (The Blessing)",
+      "key": "D",
+      "artist": "Elevation Worship with Kari Jobe & Cody Carnes",
+      "songwriter": "Kari Jobe Carnes, Cody Carnes, Steven Furtick, Chris Brown",
+      "ccli": "7147007",
+      "songselectTitle": "The Blessing",
+      "chart": {
+        "file": "02-the-blessing-D-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "Zp6aygmvzM4",
+        "url": "https://www.youtube.com/watch?v=Zp6aygmvzM4",
+        "title": "The Blessing with Kari Jobe & Cody Carnes | Live From Elevation Ballantyne | Elevation Worship",
+        "channel": "Elevation Worship"
+      },
+      "matchNotes": "Justin confirmed this is The Blessing, CCLI 7147007. Listed here as Amen (The Blessing) because of the Amen chorus. Official Elevation Worship live video (oembed verified)."
+    },
+    {
+      "n": 3,
+      "set": "first",
+      "title": "Praise",
+      "key": "A",
+      "artist": "Elevation Worship feat. Brandon Lake, Chris Brown & Chandler Moore",
+      "songwriter": "Elevation Worship",
+      "ccli": "7213077",
+      "chart": {
+        "file": "03-praise-A-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "f2oxGYpuLkw",
+        "url": "https://www.youtube.com/watch?v=f2oxGYpuLkw",
+        "title": "Praise (feat. Brandon Lake, Chris Brown & Chandler Moore) | Elevation Worship",
+        "channel": "Elevation Worship"
+      },
+      "matchNotes": "CCLI 7213077 confirmed. Official Elevation Worship channel (oembed verified)."
+    },
+    {
+      "n": 4,
+      "set": "first",
+      "title": "Open My Heart's Eyes",
+      "key": "A",
+      "artist": "Justin Yglesias / Flourish",
+      "songwriter": "Justin Yglesias",
+      "original": true,
+      "chart": {
+        "file": "04-open-my-hearts-eyes-A-lyrics.pdf",
+        "kind": "lyrics",
+        "label": "Lyrics (chord chart coming)"
+      },
+      "youtube": null,
+      "matchNotes": "Justin's original. Not the Paul Baloche song Open the Eyes of My Heart. Lyric PDF copied as-is from AL album files (Flourish lyrics shared PDF). Album lead sheet exists in Db (and Eb when paired with Be Thou My Vision) \u2014 not used, wrong key and lead-sheet format. No official recording; YouTube left blank. Do not use demo/scratch audio or the album site."
+    },
+    {
+      "n": 5,
+      "set": "first",
+      "title": "Medley: Jesus We Love You / Scandal of Grace / Great Are You Lord",
+      "key": "A",
+      "medley": true,
+      "songs": [
+        {
+          "title": "Jesus We Love You",
+          "key": "A",
+          "artist": "Bethel Music (Paul McClure)",
+          "songwriter": "Hannah McClure, Paul McClure, Kalley Heiligenthal",
+          "chart": {
+            "file": "05a-jesus-we-love-you-A-chord.pdf",
+            "kind": "chord",
+            "label": "Chord chart"
+          },
+          "youtube": {
+            "id": "dOExT9JqB7s",
+            "url": "https://www.youtube.com/watch?v=dOExT9JqB7s",
+            "title": "Jesus We Love You (Official Lyric Video) - Paul McClure | We Will Not Be Shaken",
+            "channel": "Bethel Music"
+          }
+        },
+        {
+          "title": "Scandal of Grace",
+          "key": "A",
+          "artist": "Hillsong UNITED",
+          "songwriter": "Joel Houston, Matt Crocker",
+          "chart": {
+            "file": "05b-scandal-of-grace-A-chord.pdf",
+            "kind": "chord",
+            "label": "Chord chart"
+          },
+          "youtube": {
+            "id": "GpsjgdLRf7E",
+            "url": "https://www.youtube.com/watch?v=GpsjgdLRf7E",
+            "title": "Scandal of Grace Lyric video - Hillsong UNITED",
+            "channel": "Hillsong UNITED"
+          }
+        },
+        {
+          "title": "Great Are You Lord",
+          "key": "A",
+          "artist": "All Sons & Daughters",
+          "songwriter": "Jason Ingram, Leslie Jordan, David Leonard",
+          "chart": {
+            "file": "05c-great-are-you-lord-A-chord.pdf",
+            "kind": "chord",
+            "label": "Chord chart"
+          },
+          "youtube": {
+            "id": "r7V2Ja7LzWg",
+            "url": "https://www.youtube.com/watch?v=r7V2Ja7LzWg",
+            "title": "All Sons & Daughters - Great Are You Lord (Live)",
+            "channel": "AllSonsDaughtersVEVO"
+          }
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "set": "first",
+      "title": "Show Me Your Face",
+      "key": "A",
+      "artist": "Paul Wilbur",
+      "songwriter": "Don Potter",
+      "chart": {
+        "file": "06-show-me-your-face-A-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "LWY0HcvoFVI",
+        "url": "https://www.youtube.com/watch?v=LWY0HcvoFVI",
+        "title": "Show Me Your Face (Live)",
+        "channel": "Paul Wilbur - Topic"
+      },
+      "matchNotes": "Matched to the widely used Don Potter song recorded by Paul Wilbur (not the different Klaus Kuehn song of the same title). Official artist Topic channel live audio (oembed verified). No official music-video upload found on Paul Wilbur Ministries."
+    },
+    {
+      "n": 7,
+      "set": "first",
+      "title": "You Are Holy",
+      "key": "A \u2192 B",
+      "artist": "Michael W. Smith",
+      "songwriter": "Marc Imboden, Tammi Rhoton",
+      "songselectTitle": "You Are Holy (Prince of Peace)",
+      "note": "Starts in A, then moves to B. Chord charts may land as A and/or B files.",
+      "charts": [
+        {
+          "file": "07-you-are-holy-A-chord.pdf",
+          "kind": "chord",
+          "label": "Chord chart (A)"
+        },
+        {
+          "file": "07-you-are-holy-B-chord.pdf",
+          "kind": "chord",
+          "label": "Chord chart (B)"
+        }
+      ],
+      "youtube": {
+        "id": "S0xUnb35-6E",
+        "url": "https://www.youtube.com/watch?v=S0xUnb35-6E",
+        "title": "You Are Holy (Prince Of Peace)",
+        "channel": "Michael W. Smith - Topic"
+      },
+      "matchNotes": "Matched to You Are Holy (Prince of Peace), the Michael W. Smith recording of the Imboden/Rhoton song. Official artist Topic channel audio (oembed verified). No official upload found on the main Michael W. Smith YouTube channel."
+    },
+    {
+      "n": 8,
+      "set": "second",
+      "setLabel": "Second set",
+      "title": "The Potter",
+      "key": "E",
+      "artist": "Justin Yglesias / Flourish",
+      "songwriter": "Justin Yglesias",
+      "original": true,
+      "chart": {
+        "file": "08-the-potter-E-lyrics.pdf",
+        "kind": "lyrics",
+        "label": "Lyrics (chord chart coming)"
+      },
+      "youtube": null,
+      "matchNotes": "Justin's original (Flourish Day 8), not Hillsong The Potter's Hand and not CCV Music The Potter. Lyric PDF copied as-is from AL album files. Album lead sheet exists in G \u2014 not used (wrong key, lead sheet). No official recording; YouTube left blank. Do not use demo/scratch audio or the album site."
+    },
+    {
+      "n": 9,
+      "set": "second",
+      "title": "Medley: The More I Seek You / Faithfulness",
+      "key": "E",
+      "medley": true,
+      "songs": [
+        {
+          "title": "The More I Seek You",
+          "key": "E",
+          "artist": "Gateway Worship / Kari Jobe",
+          "songwriter": "Zach Neese",
+          "ccli": "4447991",
+          "chart": {
+            "file": "09a-the-more-i-seek-you-E-chord.pdf",
+            "kind": "chord",
+            "label": "Chord chart"
+          },
+          "youtube": {
+            "id": "mEWDr_bfp60",
+            "url": "https://www.youtube.com/watch?v=mEWDr_bfp60",
+            "title": "The More I Seek You (Chapel Sessions) | feat. Jessie Harris | Gateway Worship",
+            "channel": "Gateway Worship"
+          },
+          "matchNotes": "Official Gateway Worship channel (Chapel Sessions). The original vocalist on the Gateway recording was Kari Jobe."
+        },
+        {
+          "title": "Faithfulness",
+          "key": "E",
+          "artist": "Justin Yglesias / Flourish (needs confirm)",
+          "songwriter": "Justin Yglesias (quotes the hymn Great Is Thy Faithfulness by Thomas Chisholm / William Runyan, 1923)",
+          "original": true,
+          "chart": {
+            "file": "09b-faithfulness-E-chord.pdf",
+            "kind": "chord",
+            "label": "Chord chart"
+          },
+          "youtube": null,
+          "matchNotes": "On Justin's Flourish album, Faithfulness is an original that quotes the hymn Great Is Thy Faithfulness. Not confirmed by Justin for this set the way Open My Heart's Eyes and The Potter were. Album chord chart exists in D (wrong key for this set) and was not copied. No official recording; YouTube left blank. Confirm with Justin whether this is the Flourish original or another song titled Faithfulness."
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "set": "second",
+      "title": "Rest On Us",
+      "key": "E",
+      "artist": "Maverick City Music / UPPERROOM",
+      "songwriter": "Maverick City Music / UPPERROOM",
+      "chart": {
+        "file": "10-rest-on-us-E-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "R8MZbl-GRdY",
+        "url": "https://www.youtube.com/watch?v=R8MZbl-GRdY",
+        "title": "Rest On Us (feat. Brandon Lake & Eniola Abioye) | Maverick City Music | UPPERROOM | TRIBL",
+        "channel": "TRIBL"
+      },
+      "matchNotes": "Official TRIBL (Maverick City / UPPERROOM family) collaboration video, oembed verified."
+    },
+    {
+      "n": 11,
+      "set": "second",
+      "title": "Son Of Heaven",
+      "key": "A",
+      "artist": "Brandon Lake",
+      "songwriter": "Brandon Lake",
+      "chart": {
+        "file": "11-son-of-heaven-A-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "MULvWlYGHr4",
+        "url": "https://www.youtube.com/watch?v=MULvWlYGHr4",
+        "title": "Son Of Heaven - Brandon Lake  | House of Miracles",
+        "channel": "Bethel Music"
+      },
+      "matchNotes": "Official Bethel Music channel (House of Miracles), oembed verified. UCatholic has this song in F; this set needs A \u2014 new charts, do not reuse the F files."
+    },
+    {
+      "n": 12,
+      "set": "second",
+      "title": "Set A Fire",
+      "key": "A",
+      "artist": "Will Reagan & United Pursuit",
+      "songwriter": "Will Reagan",
+      "chart": {
+        "file": "12-set-a-fire-A-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "0A8almp_nCU",
+        "url": "https://www.youtube.com/watch?v=0A8almp_nCU",
+        "title": "Set a Fire - Will Reagan & United Pursuit",
+        "channel": "United Pursuit"
+      },
+      "matchNotes": "Official United Pursuit channel, oembed verified."
+    },
+    {
+      "n": 13,
+      "set": "close",
+      "setLabel": "Close",
+      "title": "Doxology",
+      "key": "A",
+      "artist": "Traditional / The Worship Initiative feat. Shane & Shane",
+      "songwriter": "Thomas Ken (text, 1709); tune OLD 100TH, Louis Bourgeois / Genevan Psalter (public domain)",
+      "chart": {
+        "file": "13-doxology-A-chord.pdf",
+        "kind": "chord",
+        "label": "Chord chart"
+      },
+      "youtube": {
+        "id": "9PtLcni6Uq4",
+        "url": "https://www.youtube.com/watch?v=9PtLcni6Uq4",
+        "title": "Doxology | The Worship Initiative feat. Shane and Shane | LIVE from The Gospel Coalition",
+        "channel": "The Gospel Coalition"
+      },
+      "matchNotes": "Traditional Doxology. Official live performance video on The Gospel Coalition channel, featuring The Worship Initiative / Shane & Shane (oembed verified). This arrangement includes an Amen section; confirm with Justin if he wants a plain Old 100th or a specific arrangement in A."
+    }
+  ]
+}
